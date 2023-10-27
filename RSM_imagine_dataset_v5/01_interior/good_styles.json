@@ -1,0 +1,100 @@
+{
+  "styles": [
+    {
+      "name": "Japanese",
+      "prompt": "a photo of beautiful room and interior in the style of Japanese, 4K, 8K, detailed, high quality",
+      "negative_prompt": "(worst_quality:2.0) low quality, blur, deformed ugly, error, pixelated",
+      "BLIP_caption": "a close up of a living room with a television and a table, modern japanese living room, traditional japanese, japanese influences, japanese house, japanese style, in a japanese apartment, japanese inspiration, asian interior decoration, japanese art style, with japanese inspiration, japanese design, inspired by Gusukuma Seih\u014d, neotraditional modern minimalist, japanese architecture"
+    },
+    {
+      "name": "Scandinavian",
+      "prompt": "a photo of beautiful room and interior in the style of Scandinavian, 4K, 8K, detailed, high quality",
+      "negative_prompt": "(worst_quality:2.0) low quality, blur, deformed ugly, error, pixelated",
+      "BLIP_caption": "a close up of a living room with a couch and a table, stunning 3d render, stunning 3 d render, very realistic 3 d render, stunning render, beautiful render, corona render, photorender, beautiful 3d render, archviz, beautifully detailed render, gorgeous 3d render, render vray, natural realistic render, very realistic render, product render"
+    },
+    {
+      "name": "Mid-Century Modern",
+      "prompt": "a photo of beautiful room and interior in the style of Mid-Century Modern, 4K, 8K, detailed, high quality",
+      "negative_prompt": "(worst_quality:2.0) low quality, blur, deformed ugly, error, pixelated",
+      "BLIP_caption": "arafed living room with a couch, coffee table, and television, high-quality render, high quality 3d render, high quality 3 d render, realistic 3 d style, excellent 3d render, vray 8k render, highly detailed render, 8k vray render, professional 3d render, very realistic render, very realistic 3 d render, rendered lighting"
+    },
+    {
+      "name": "Minimalism",
+      "prompt": "a photo of beautiful room and interior in the style of Minimalism, 4K, 8K, detailed, high quality",
+      "negative_prompt": "(worst_quality:2.0) low quality, blur, deformed ugly, error, pixelated",
+      "BLIP_caption": "a brightly lit living room with a gray couch and ottoman, muted colors with minimalism, archviz, minimalist interior design, natural light in room, render vray, neotraditional modern minimalist, apartment design, high-quality render, muted lighting, award-winning render, vray 8k render, vray 4k render, vray render, scandinavian design"
+    },
+    {
+      "name": "Industrial Design",
+      "prompt": "a photo of beautiful room and interior in the style of Industrial Design, 4K, 8K, detailed, high quality",
+      "negative_prompt": "(worst_quality:2.0) low quality, blur, deformed ugly, error, pixelated",
+      "BLIP_caption": "a view of a living room with a couch, chair, coffee table and a clock, vray 8k render, vray 8k, interior of a loft, 8k vray render, unreal engine realistic render, picture of an interior loft, render in vray, render vray, photo-realistic unreal engine, professional render, high-quality render"
+    },
+    {
+      "name": "Bohemian",
+      "prompt": "a photo of beautiful room and interior in the style of Bohemian, 4K, 8K, detailed, high quality",
+      "negative_prompt": "(worst_quality:2.0) low quality, blur, deformed ugly, error, pixelated",
+      "BLIP_caption": "a close up of a living room with a couch and a rug, warm interior, living room vibe, decoration around the room, cottagecore hippie, detailed unreal engine 5 render, inspired by Riad Beyrouti, highly detailed render, bohemian style, photorealistic room, 8k high quality detailed art, high-quality render, warm cosy colors"
+    },
+    {
+      "name": "Contemporary",
+      "prompt": "a photo of beautiful room and interior in the style of Contemporary, 4K, 8K, detailed, high quality",
+      "negative_prompt": "(worst_quality:2.0) low quality, blur, deformed ugly, error, pixelated",
+      "BLIP_caption": "a rendering of a living room with a couch, chair, coffee table and a television, luxury hd render, stunning render, excellent 3d render, modern style, high-quality render, stunning 3 d render, stunning 3d render, elegant render, very realistic render, beautifully detailed render, professional render, in style of 3d render, very realistic 3 d render"
+    },
+    {
+      "name": "Environmentally Friendly Design",
+      "prompt": "a photo of beautiful room and interior in the style of Environmentally Friendly Design, 4K, 8K, detailed, high quality",
+      "negative_prompt": "(worst_quality:2.0) low quality, blur, deformed ugly, error, pixelated",
+      "BLIP_caption": "a rendering of a living room with a couch, coffee table, and potted plants, natural realistic render, excellent 3d render, high-quality render, vray 8k render, natural light in room, very realistic 3 d render, in style of 3d render, natural window lighting, high quality 3d render, 8k vray render"
+    },
+    {
+      "name": "Retro",
+      "prompt": "a photo of beautiful room and interior in the style of Retro, 4K, 8K, detailed, high quality",
+      "negative_prompt": "(worst_quality:2.0) low quality, blur, deformed ugly, error, pixelated",
+      "BLIP_caption": "a close up of a living room with a couch and a table, beige and dark atmosphere, concept eclectic, dark and beige atmosphere, detailed lighting and textures, vray 8k render, cosy atmoshpere, detailed textures and lighting, very realistic 3 d render, warm lighting interior, rendered lighting, dramatic lighting render, corona render, warm living room, warm interior"
+    },
+    {
+      "name": "Art Deco",
+      "prompt": "a photo of beautiful room and interior in the style of Art Deco, 4K, 8K, detailed, high quality",
+      "negative_prompt": "(worst_quality:2.0) low quality, blur, deformed ugly, error, pixelated",
+      "BLIP_caption": "a large living room with a chandelier and a couch, extremely opulent, neoclassical style, elegant and refined, neo - classical style, elegant and ornate, gold and luxury materials, elegant and extremely ornamental, ornate and elegant, neoclassicism style, ornate and detailed, classical style, realistic art deco, luxurious environment, beautiful aesthetic design, baroque marble and gold in space"
+    },
+    {
+      "name": "Asian",
+      "prompt": "a photo of beautiful room and interior in the style of Asian, 4K, 8K, detailed, high quality",
+      "negative_prompt": "(worst_quality:2.0) low quality, blur, deformed ugly, error, pixelated",
+      "BLIP_caption": "a large living room with a couch, coffee table, and a rug, with ancient chinese aesthetic, asian interior decoration, chinese style, traditional chinese, beautiful aesthetic design, excellent 3d render, popular interior design style, placed in a large living room, eastern art style, high-quality render, highly detailed render, highly detailed interior, elegant and ornate"
+    },
+    {
+      "name": "Beach Style",
+      "prompt": "a photo of beautiful room and interior in the style of Beach Style, 4K, 8K, detailed, high quality",
+      "negative_prompt": "(worst_quality:2.0) low quality, blur, deformed ugly, error, pixelated",
+      "BLIP_caption": "a close up of a living room with a couch and a table, sunny bay window, serene and peaceful style, relaxing environment, in a beachfront environment, natural window lighting, detailed natural lighting, beachfront, rendered in corona, serene beach setting, overlooking the ocean, sand - colored walls, with backdrop of natural light, natural light in room, a photorealistic rendering"
+    },
+    {
+      "name": "Farmhouse",
+      "prompt": "a photo of beautiful room and interior in the style of Farmhouse, 4K, 8K, detailed, high quality",
+      "negative_prompt": "(worst_quality:2.0) low quality, blur, deformed ugly, error, pixelated",
+      "BLIP_caption": "a close up of a living room with a couch, chair, table and a window, cosy atmoshpere, modern rustic, cozy environment, cozy and calm, cozy living room interior, beautifully detailed render, excellent 3d render, natural realistic render, cottagecore, cozy living room, wood accents, cozy place, high quality 3d render"
+    },
+    {
+      "name": "Modern Eclectic",
+      "prompt": "a photo of beautiful room and interior in the style of Modern Eclectic, 4K, 8K, detailed, high quality",
+      "negative_prompt": "(worst_quality:2.0) low quality, blur, deformed ugly, error, pixelated",
+      "BLIP_caption": "a living room with a blue couch, a coffee table, and a large window, high quality 3 d render, high quality 3d render, neo - classical style, in style of 3d render, stunning 3 d render, stunning 3d render, very realistic 3 d render, vray 8k render, high-quality render, excellent 3d render"
+    },
+    {
+      "name": "Southwestern",
+      "prompt": "a photo of beautiful room and interior in the style of Southwestern, 4K, 8K, detailed, high quality",
+      "negative_prompt": "(worst_quality:2.0) low quality, blur, deformed ugly, error, pixelated",
+      "BLIP_caption": "a close up of a living room with a couch and a rug, detailed unreal engine 5 render, rendered in corona, rendered in unreal engine 5, unreal engine 5 highly rendered, rendered unreal engine 5, hdr render in unreal engine 5, render in unreal engine 5, unreal engine 5 rendered, made in unreal engine 5, unreal engine 5 environment, rendered in unreal 5"
+    },
+    {
+      "name": "Transitional",
+      "prompt": "a photo of beautiful room and interior in the style of Transitional, 4K, 8K, detailed, high quality",
+      "negative_prompt": "(worst_quality:2.0) low quality, blur, deformed ugly, error, pixelated",
+      "BLIP_caption": "a view of a living room with a chandelier and a couch, elegant and refined, neoclassical style, neo - classical style, classical style, elegant and ornate, extremely opulent, luxurious environment, ornate and elegant, neoclassicism style, classicism style, living room interior design, rich style, ornate and flowing, royal interior, cream - colored room"
+    }
+  ]
+}

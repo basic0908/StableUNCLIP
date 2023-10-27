@@ -1,0 +1,100 @@
+{
+  "styles": [
+    {
+      "name": "Sophisticated",
+      "prompt": "Product photography, a IPA bottle, Sophisticated label, isolated on a plain background",
+      "negative_prompt": "(worst_quality:2.0) low quality, blur, deformed ugly, error, pixelated, wallpaper, Multiple bottles",
+      "BLIP_caption": "a close up of a bottle of beer on a gray background, new england ipa, inspired by John Brown Abercromby, aly fell, official product photo, label design, beer bottle, bottle, image, detailed image, very detailed labeling, 2 0 yo, 20yo, 2 5 yo, inspired by Tuvia Beeri, silvergill adept, sepia"
+    },
+    {
+      "name": "Country",
+      "prompt": "Product photography, a IPA bottle, Country label, isolated on a plain background",
+      "negative_prompt": "(worst_quality:2.0) low quality, blur, deformed ugly, error, pixelated, wallpaper, Multiple bottles",
+      "BLIP_caption": "a close up of a bottle of beer with a horse on the label, beer bottle, official product photo, new england ipa, beer, 2018, 2 0 1 8, high resolution product photo, 2 0 1 0, 2010, 2 0 1 1, 2011, 2 5 yo, traditional medium, 2 0 yo"
+    },
+    {
+      "name": "Cute",
+      "prompt": "Product photography, a IPA bottle, Cute label, isolated on a plain background",
+      "negative_prompt": "(worst_quality:2.0) low quality, blur, deformed ugly, error, pixelated, wallpaper, Multiple bottles",
+      "BLIP_caption": "a close up of a bottle of beer on a table, new england ipa, ia bottle n the shape of shrek, inspired by Tuvia Beeri, t - rex drinking a giant ipa, inspired by Slava Ra\u0161kaj, 2 5 yo, on a pale background, detailed image, \u201c iron bark, beer bottle, 2 0 yo, 20yo"
+    },
+    {
+      "name": "Elegant",
+      "prompt": "Product photography, a IPA bottle, Elegant label, isolated on a plain background",
+      "negative_prompt": "(worst_quality:2.0) low quality, blur, deformed ugly, error, pixelated, wallpaper, Multiple bottles",
+      "BLIP_caption": "a bottle of beer with a label on it, new england ipa, ia bottle n the shape of shrek, beer bottle, in a baroque style, extremely intricate, label design, bottle, very detailed labeling, intricate detailed, on a pale background, inspired by Slava Ra\u0161kaj, an intricate, studio packshot, holding a bottle of beer, official product photo"
+    },
+    {
+      "name": "Active",
+      "prompt": "Product photography, a IPA bottle, Active label, isolated on a plain background",
+      "negative_prompt": "(worst_quality:2.0) low quality, blur, deformed ugly, error, pixelated, wallpaper, Multiple bottles",
+      "BLIP_caption": "a bottle of beer sitting on top of a table, new england ipa, inspired by John Brown Abercromby, inspired by Ota Buben\u00ed\u010dek, inspired by B\u00e9la Ap\u00e1ti Abkarovics, inspired by Slava Ra\u0161kaj, beer bottle, alp, detailed image, image, holding a bottle of beer, official product photo, portrait of a big"
+    },
+    {
+      "name": "Plain",
+      "prompt": "Product photography, a IPA bottle, Plain label, isolated on a plain background",
+      "negative_prompt": "(worst_quality:2.0) low quality, blur, deformed ugly, error, pixelated, wallpaper, Multiple bottles",
+      "BLIP_caption": "a close up of a bottle of beer on a white surface, new england ipa, beer bottle, studio packshot, product photo, beer, by Adriaen Hanneman, inspired by \u00c1sgr\u00edmur J\u00f3nsson, inspired by B\u00e9la P\u00e1llik, by Shinji Aramaki, drinking a beer, pa works"
+    },
+    {
+      "name": "Progressive",
+      "prompt": "Product photography, a IPA bottle, Progressive label, isolated on a plain background",
+      "negative_prompt": "(worst_quality:2.0) low quality, blur, deformed ugly, error, pixelated, wallpaper, Multiple bottles",
+      "BLIP_caption": "a close up of a bottle of beer with a green label, new england ipa, rye (shishkin), ia bottle n the shape of shrek, by Tuvia Beeri, hop cone juice, official product photo, 20yo, 2 0 yo, 2 5 yo, beer bottle, apipheny, inspired by Tuvia Beeri, product photo"
+    },
+    {
+      "name": "Conservative",
+      "prompt": "Product photography, a IPA bottle, Conservative label, isolated on a plain background",
+      "negative_prompt": "(worst_quality:2.0) low quality, blur, deformed ugly, error, pixelated, wallpaper, Multiple bottles",
+      "BLIP_caption": "a close up of a bottle of beer on a table, agharta, agartha, arabella mistsplitter, new england ipa, by Aleksander Gierymski, by Mathias Kollros, amphora, beer bottle, official product photo, hydra, laputa, a beautiful detailed orixa, by karlkka, threyda"
+    },
+    {
+      "name": "Stable",
+      "prompt": "Product photography, a IPA bottle, Stable label, isolated on a plain background",
+      "negative_prompt": "(worst_quality:2.0) low quality, blur, deformed ugly, error, pixelated, wallpaper, Multiple bottles",
+      "BLIP_caption": "a bottle of beer with a green label on it, new england ipa, ia bottle n the shape of shrek, inspired by John Brown Abercromby, beer bottle, very detailed labeling, wpa, bottle, packshot, professional image, frightening appearance, holding a bottle of beer, professional product photo, with an intricate, extremely intricate, award winning dark, green arms"
+    },
+    {
+      "name": "Safe",
+      "prompt": "Product photography, a IPA bottle, Safe label, isolated on a plain background",
+      "negative_prompt": "(worst_quality:2.0) low quality, blur, deformed ugly, error, pixelated, wallpaper, Multiple bottles",
+      "BLIP_caption": "a close up of a bottle of beer on a table, sepia toned, sepia tone, \u201c iron bark, new england ipa, official product photo, extremely intricate, hypervivid intense mcbess, beer bottle, 20yo, 2 0 yo, full product shot, individual, high resolution product photo, unedited, 2 5 yo, diesel punk, thumbnail"
+    },
+    {
+      "name": "Formal",
+      "prompt": "Product photography, a IPA bottle, Formal label, isolated on a plain background",
+      "negative_prompt": "(worst_quality:2.0) low quality, blur, deformed ugly, error, pixelated, wallpaper, Multiple bottles",
+      "BLIP_caption": "a close up of a bottle of beer on a table, new england ipa, extremely intricate, inca themed smooth, official product photo, ia bottle n the shape of shrek, intricate superb details, sepia, stunningly detailed, sepia tone, inspired by Tuvia Beeri, inspired by Slava Ra\u0161kaj, magic and steam - punk inspired, impressive detail"
+    },
+    {
+      "name": "Modern",
+      "prompt": "Product photography, a IPA bottle, Modern label, isolated on a plain background",
+      "negative_prompt": "(worst_quality:2.0) low quality, blur, deformed ugly, error, pixelated, wallpaper, Multiple bottles",
+      "BLIP_caption": "a bottle of beer with a label on it, new england ipa, inspired by John Brown Abercromby, beer bottle, official product photo, professional product photo, bottle, high resolution product photo, holding a bottle of beer, individual, high quality product photo, dripping blue natural iwakura, product photo, beautiful coherent professional, proportional image, product photograph"
+    },
+    {
+      "name": "Romantic",
+      "prompt": "Product photography, a IPA bottle, Romantic label, isolated on a plain background",
+      "negative_prompt": "(worst_quality:2.0) low quality, blur, deformed ugly, error, pixelated, wallpaper, Multiple bottles",
+      "BLIP_caption": "a bottle of beer with a label on it sitting on a table, new england ipa, product photo, by Petr Brandl, mead, inspired by Don Eddy, \u201cpig, by Tadeusz Makowski, 1 petapixel image, pastel', official product photo, in detail, by Aleksander Gierymski, by Elias Ravanetti"
+    },
+    {
+      "name": "Mannish",
+      "prompt": "Product photography, a IPA bottle, Mannish label, isolated on a plain background",
+      "negative_prompt": "(worst_quality:2.0) low quality, blur, deformed ugly, error, pixelated, wallpaper, Multiple bottles",
+      "BLIP_caption": "a close up of a bottle of beer on a table, new england ipa, inspired by John Brown Abercromby, inspired by William Morris, extremely intricate, ultra intricate detailed, intricate detailed, intricately detailed, official product photo, with an intricate, intricated detailed, beer bottle, highly intricate detailed, intricate superb details, beautiful detailed intricate, high resolution product photo"
+    },
+    {
+      "name": "Artificial",
+      "prompt": "Product photography, a IPA bottle, Artificial label, isolated on a plain background",
+      "negative_prompt": "(worst_quality:2.0) low quality, blur, deformed ugly, error, pixelated, wallpaper, Multiple bottles",
+      "BLIP_caption": "a close up of a bottle of beer on a table, new england ipa, beer bottle, inspired by John Brown Abercromby, holding a bottle of beer, bottle, very detailed labeling, fine intricate, inspired by \u00c1sgr\u00edmur J\u00f3nsson, professional product photo, ia bottle n the shape of shrek, holding beer bottles, fine portrait, extremely intricate"
+    },
+    {
+      "name": "Simple",
+      "prompt": "Product photography, a IPA bottle, Simple label, isolated on a plain background",
+      "negative_prompt": "(worst_quality:2.0) low quality, blur, deformed ugly, error, pixelated, wallpaper, Multiple bottles",
+      "BLIP_caption": "a bottle of beer with a brown label and a leaf on the top, new england ipa, label design, inspired by B\u00e9la Ap\u00e1ti Abkarovics, industrial apparent, inspired by Christoph Ludwig Agricola, inspired by Louise Abb\u00e9ma, inspired by Tuvia Beeri, inspired by Tom La Padula, bottle, inspired by Ivan Generali\u0107"
+    }
+  ]
+}
