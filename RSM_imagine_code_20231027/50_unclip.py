@@ -1,3 +1,7 @@
+##
+## image_embedsを画像に戻す
+##
+
 from diffusers import StableUnCLIPImg2ImgPipeline
 from diffusers.utils import load_image
 import torch

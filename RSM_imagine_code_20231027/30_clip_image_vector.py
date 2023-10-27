@@ -1,3 +1,7 @@
+##
+##画像からimage_embedsを抽出
+##
+
 from PIL import Image
 import os, glob
 import torch
@@ -38,7 +42,7 @@ def main2():
     model = CLIPVisionModelWithProjection.from_pretrained(model_name).to('cuda', dtype=torch.float16)
     processor = AutoProcessor.from_pretrained(model_name)
 
-    root_folder = r"C:\Users\1000001991\Desktop\RSM_imagine\dataset_v5\RSM_imagine_dataset_v5\02_painting"
+    root_folder = r"C:\Users\ibara\Downloads\StableUNCLIP\RSM_Imagine\RSM_imagine_dataset_v5\02_painting"
     in_folder = os.path.join(root_folder, '30_variation_16x16')
     out_folder = os.path.join(root_folder, '42_variation_image_embeds')
 

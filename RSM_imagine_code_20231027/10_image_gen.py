@@ -1,3 +1,7 @@
+##
+##Stable diffusion XL のAPIをたたいて高精度の画像を生成
+##
+
 import os, json
 import requests
 import base64

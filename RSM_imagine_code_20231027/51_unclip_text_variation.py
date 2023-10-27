@@ -1,3 +1,7 @@
+##
+##テキストからtext_embedsを抽出
+##
+
 from diffusers import StableUnCLIPImg2ImgPipeline
 import torch
 import os, json, random
