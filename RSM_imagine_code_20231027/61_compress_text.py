@@ -3,6 +3,8 @@ import os, json, random, re
 from PIL import Image, ImageFont, ImageDraw
 
 root_dir = r"C:\Users\1000001991\Desktop\RSM_imagine"
+root_dir = r"C:\Users\ibara\Downloads\StableUNCLIP\RSM_Imagine"
+
 
 output_dir = os.path.join(root_dir, 'LLM_refine')
 

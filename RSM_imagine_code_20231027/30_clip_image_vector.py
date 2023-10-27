@@ -4,7 +4,8 @@ import torch
 import numpy as np
 from transformers import AutoProcessor, CLIPVisionModelWithProjection
 
-root_dir = r"C:\Users\1000001991\Desktop\RSM_Imagine\dataset_v5"
+root_dir = r"C:\Users\ibara\Downloads\StableUNCLIP\RSM_Imagine\RSM_imagine_dataset_v5"
+
 data_dir = os.path.join(root_dir, 'data')
 
 def main():

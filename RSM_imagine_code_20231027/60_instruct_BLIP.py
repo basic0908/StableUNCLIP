@@ -11,7 +11,7 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 model.to(device)
 
 
-image_dir = r"C:\Users\1000001991\Desktop\RSM_imagine\dataset_v5\RSM_imagine_dataset_v5\00_beer_bottle\10_good_image"
+image_dir = r"C:\Users\ibara\Downloads\StableUNCLIP\RSM_Imagine\RSM_imagine_dataset_v5\00_beer_bottle\10_good_image"
 responses = []
 for path in glob.glob(os.path.join(image_dir, '*')):
     basename = os.path.splitext(os.path.basename(path))[0]
