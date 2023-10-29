@@ -10,12 +10,14 @@ from PIL import Image
 import numpy as np
 
 root_dir = r"C:\Users\1000001991\Desktop\RSM_Imagine\dataset_v5"
+root_dir = r"C:\Users\ibara\Downloads\StableUNCLIP\RSM_Imagine\RSM_imagine_dataset_v5"
+
 data_dir = os.path.join(root_dir, 'data')
 
 def main():
-    # target = '00_beer_bottle'
+    target = '00_beer_bottle'
     # target = '01_interior'
-    target = '02_painting'
+    #target = '02_painting'
 
     top_dir = os.path.join(data_dir, target)
     image_embeds_dir = os.path.join(top_dir, '22_image_embeds')
