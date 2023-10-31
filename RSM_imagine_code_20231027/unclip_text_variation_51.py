@@ -50,7 +50,7 @@ def unclip_text_variation_51_main(pipe, text_model, text_tokenizer):
                         padding=True,
                         return_tensors="pt"
                         ).input_ids
-            encoder_hidden_states = text_model(prompt_ids.to('cuda'))[0]
+            encoder_hidden_states = text_model(prompt_ids.to('cuda'))[1]
 
             image = pipe(image_embeds=encoder_hidden_states).images[0]
             image.save(os.path.join(output_dir, f'{id_0}_{id_1}.jpg'))

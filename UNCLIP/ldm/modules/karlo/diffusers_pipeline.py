@@ -195,7 +195,7 @@ class UnCLIPPipeline(DiffusionPipeline):
 
         return text_embeddings, text_encoder_hidden_states, text_mask
 
-    def enable_sequential_cpu_offload(self, gpu_id=0):
+    def enable_sequential_cpu_offload(self, gpu_id=1):
         r"""
         Offloads all models to CPU using accelerate, significantly reducing memory usage. When called, the pipeline's
         models have their state dicts saved to CPU and then are moved to a `torch.device('meta') and loaded to GPU only
