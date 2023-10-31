@@ -9,12 +9,12 @@ import os, json, random
 from PIL import Image
 import numpy as np
 
-root_dir = r"C:\Users\1000001991\Desktop\RSM_Imagine\dataset_v5"
-root_dir = r"C:\Users\ibara\Downloads\StableUNCLIP\RSM_Imagine\RSM_imagine_dataset_v5"
+#root_dir = r"C:\Users\1000001991\Desktop\RSM_Imagine\dataset_v5"
+root_dir = r"C:\Users\ibara\Downloads\StableUNCLIP\RSM_imagine_dataset_v5"
 
 data_dir = os.path.join(root_dir, 'data')
 
-def main():
+def unclip_50_main(pipe):
     target = '00_beer_bottle'
     # target = '01_interior'
     #target = '02_painting'
@@ -24,10 +24,10 @@ def main():
     output_dir = os.path.join(top_dir, '31_variation_16x16_image_embeds')
     os.makedirs(output_dir, exist_ok=True)
 
-    pipe = StableUnCLIPImg2ImgPipeline.from_pretrained(
-        "stabilityai/stable-diffusion-2-1-unclip", torch_dtype=torch.float16
-    )
-    pipe = pipe.to("cuda")
+    # pipe = StableUnCLIPImg2ImgPipeline.from_pretrained(
+    #     "stabilityai/stable-diffusion-2-1-unclip", torch_dtype=torch.float16
+    # )
+    # pipe = pipe.to("cuda")
 
     for i in range(16):
         id_0 = str(i).zfill(2)
@@ -42,6 +42,7 @@ def main():
 
             image = pipe(image_embeds=mean).images[0]
             image.save(os.path.join(output_dir, f'{id_0}_{id_1}.jpg'))
+    print("main() done.")
 
 if __name__ == "__main__":
-    main()
+    unclip_50_main()

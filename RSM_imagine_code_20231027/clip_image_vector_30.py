@@ -13,9 +13,9 @@ root_dir = r"C:\Users\ibara\Downloads\StableUNCLIP\RSM_Imagine\RSM_imagine_datas
 data_dir = os.path.join(root_dir, 'data')
 
 def main():
-    # target = '00_beer_bottle'
+    target = '00_beer_bottle'
     # target = '01_interior'
-    target = '02_painting'
+    #  target = '02_painting'
 
     top_dir = os.path.join(data_dir, target)
     image_dir = os.path.join(top_dir, '10_good_image')
@@ -36,17 +36,25 @@ def main():
         image_embeds = image_embeds.to(torch.float32)
         print(i, image_embeds.shape, image_embeds.dtype)
         np.save(os.path.join(image_embeds_dir, f'{id}.npy'), image_embeds.to('cpu').detach().numpy())
+    print("Main() done.")
 
-def main2():
-    model_name = "laion/CLIP-ViT-H-14-laion2B-s32B-b79K"
-    model = CLIPVisionModelWithProjection.from_pretrained(model_name).to('cuda', dtype=torch.float16)
-    processor = AutoProcessor.from_pretrained(model_name)
+def clip_image_vector_30_main2(model, processor):
+    ##########TAKES A WHILE TO LOAD#####
+    #model_name = "laion/CLIP-ViT-H-14-laion2B-s32B-b79K"
+    #model = CLIPVisionModelWithProjection.from_pretrained(model_name).to('cuda', dtype=torch.float16)
+    #processor = AutoProcessor.from_pretrained(model_name)
+    ####################################
 
-    root_folder = r"C:\Users\ibara\Downloads\StableUNCLIP\RSM_Imagine\RSM_imagine_dataset_v5\02_painting"
+    root_folder = r"C:\Users\ibara\Downloads\StableUNCLIP\RSM_imagine_dataset_v5\00_beer_bottle"
     in_folder = os.path.join(root_folder, '30_variation_16x16')
     out_folder = os.path.join(root_folder, '42_variation_image_embeds')
 
+    print("in_folder is {}".format(str(in_folder)))
+    print("out_folder is {}".format(str(out_folder)))
+
+
     for path in glob.glob(os.path.join(in_folder, '*')):
+        print("Path is {}".format(path))
         basename = os.path.splitext(os.path.basename(path))[0]
         print(basename)
 
@@ -59,6 +67,6 @@ def main2():
         print(basename, image_embeds.shape, image_embeds.dtype)
         np.save(os.path.join(out_folder, f'{basename}.npy'), image_embeds.to('cpu').detach().numpy())
 
-
+    print("Main2() done.")
 if __name__ == "__main__":
-    main2()
+    clip_image_vector_30_main2()
