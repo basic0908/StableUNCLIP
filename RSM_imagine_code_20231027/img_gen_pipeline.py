@@ -37,11 +37,16 @@ def load():
     return model_clip_image_vector_30, processor_clip_image_vector_30, pipe_unclip_50, pipe_unclip_text_variation_51, text_model_unclip_text_variation_51, text_tokenizer_unclip_text_variation_51
         
 def main():
-    model_clip_image_vector_30, processor_clip_image_vector_30,\
-        pipe_unclip_50, pipe_unclip_text_variation_51,\
-            text_model_unclip_text_variation_51, text_tokenizer_unclip_text_variation_51 = load()
+
+    root_dir = r"C:\Users\ibara\Downloads\StableUNCLIP\RSM_imagine_dataset_v5"
+
+    # model_clip_image_vector_30, processor_clip_image_vector_30,\
+    #     pipe_unclip_50, pipe_unclip_text_variation_51,\
+    #         text_model_unclip_text_variation_51, text_tokenizer_unclip_text_variation_51 = load()
     
     print("##############INITIALIZING PROCESS##############")
+    print("##############PRESS ESC TO END##############")
+
     while True:
    
 
