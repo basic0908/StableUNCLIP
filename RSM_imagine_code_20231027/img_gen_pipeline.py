@@ -5,9 +5,10 @@ from unclip_text_variation_51 import *
 
 
 def load():
+    # Loads all required models  
+    #torch.cuda.empty_cache()
 
-    torch.cuda.empty_cache()
-     #Loading clip_image_vector_30.py models
+    #Loading clip_image_vector_30.py models
     model_name_clip_image_vector_30 = "laion/CLIP-ViT-H-14-laion2B-s32B-b79K"
     model_clip_image_vector_30 = CLIPVisionModelWithProjection.from_pretrained(model_name_clip_image_vector_30).to('cuda', dtype=torch.float16)
     processor_clip_image_vector_30 = AutoProcessor.from_pretrained(model_name_clip_image_vector_30)
@@ -40,9 +41,11 @@ def main():
 
     root_dir = r"C:\Users\ibara\Downloads\StableUNCLIP\RSM_imagine_dataset_v5"
 
-    # model_clip_image_vector_30, processor_clip_image_vector_30,\
-    #     pipe_unclip_50, pipe_unclip_text_variation_51,\
-    #         text_model_unclip_text_variation_51, text_tokenizer_unclip_text_variation_51 = load()
+    print('##############LOADING MODELS##############')
+
+    model_clip_image_vector_30, processor_clip_image_vector_30,\
+        pipe_unclip_50, pipe_unclip_text_variation_51,\
+            text_model_unclip_text_variation_51, text_tokenizer_unclip_text_variation_51 = load()
     
     print("##############INITIALIZING PROCESS##############")
     print("##############PRESS ESC TO END##############")
