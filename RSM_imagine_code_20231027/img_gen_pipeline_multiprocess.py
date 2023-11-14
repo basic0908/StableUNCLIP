@@ -22,12 +22,12 @@ def embeds_to_image(pipe, embeds):
 
 def showImage(path):
     if os.path.exists(path):
-        # img = mpimg.imread(path)
+        img = mpimg.imread(path)
 
-        # plt.axis('off')
-        # plt.imshow(img)
-        # plt.show(block=False)
-        # plt.pause(0.1)
+        plt.axis('off')
+        plt.imshow(img)
+        plt.show(block=False)
+        plt.pause(0.1)
         print(random.random())
     else:
         print("PATH NOT FOUND : {}".format(path))
