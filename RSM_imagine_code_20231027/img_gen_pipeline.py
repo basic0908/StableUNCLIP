@@ -24,7 +24,7 @@ def showImage(path):
         plt.axis('off')
         plt.imshow(img)
         plt.show(block=False)
-        plt.pause(0.3)
+        plt.pause(0.1)
     else:
         print("PATH NOT FOUND : {}".format(path))
 
