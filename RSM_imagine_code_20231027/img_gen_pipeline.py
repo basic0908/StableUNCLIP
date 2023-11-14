@@ -5,8 +5,8 @@ from unclip_text_variation_51 import *
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 
-EMBEDS_DIR = r"C:\Users\ibara\Downloads\StableUNCLIP\RSM_imagine_dataset_v5\00_beer_bottle\22_image_embeds\00.npy"
-OUTPUT_DIR = r"C:\Users\ibara\Downloads\StableUNCLIP\RSM_imagine_dataset_v5\00_beer_bottle\OUTPUT_DIR"
+EMBEDS_DIR = r"C:\Users\ibara\Downloads\StableUNCLIP\RSM_imagine_dataset_v5\beer\22_image_embeds\00.npy"
+OUTPUT_DIR = r"C:\Users\ibara\Downloads\StableUNCLIP\RSM_imagine_dataset_v5\beer\OUTPUT_DIR"
 
 
 def embeds_to_image(pipe, embeds):

@@ -1,0 +1,100 @@
+{
+    "styles": [
+        {
+            "name": "Bohemian",
+            "prompt": "Portrait of a beautiful woman wearing the Bohemian style, full body shot, isolated on a plain background",
+            "negative_prompt": "(worst_quality:2.0) low quality, blur ,deformed ugly, error, pixelated, bad face",
+            "BLIP_caption": "a woman in a long dress standing on a rug"
+        },
+        {
+            "name": "Athleisure",
+            "prompt": "Portrait of a beautiful woman wearing the Athleisure style, full body shot, isolated on a plain background",
+            "negative_prompt": "(worst_quality:2.0) low quality, blur ,deformed ugly, error, pixelated, bad face",
+            "BLIP_caption": "a woman in grey sports suit posing for a photo"
+        },
+        {
+            "name": "Classic",
+            "prompt": "Portrait of a beautiful woman wearing the Classic style, full body shot, isolated on a plain background",
+            "negative_prompt": "(worst_quality:2.0) low quality, blur ,deformed ugly, error, pixelated, bad face",
+            "BLIP_caption": "a woman in a long dress and jacket poses for a photo"
+        },
+        {
+            "name": "Preppy",
+            "prompt": "Portrait of a beautiful woman wearing the Preppy style, full body shot, isolated on a plain background",
+            "negative_prompt": "(worst_quality:2.0) low quality, blur ,deformed ugly, error, pixelated, bad face",
+            "BLIP_caption": "a woman in a skirt and jacket posing for a picture"
+        },
+        {
+            "name": "Romantic",
+            "prompt": "Portrait of a beautiful woman wearing the Romantic style, full body shot, isolated on a plain background",
+            "negative_prompt": "(worst_quality:2.0) low quality, blur ,deformed ugly, error, pixelated, bad face",
+            "BLIP_caption": "a woman in a pink dress poses for a photo"
+        },
+        {
+            "name": "Streetwear",
+            "prompt": "Portrait of a beautiful woman wearing the Streetwear style, full body shot, isolated on a plain background",
+            "negative_prompt": "(worst_quality:2.0) low quality, blur ,deformed ugly, error, pixelated, bad face",
+            "BLIP_caption": "a woman in a blue jacket and jeans poses for a photo"
+        },
+        {
+            "name": "Vintage",
+            "prompt": "Portrait of a beautiful woman wearing the Vintage style, full body shot, isolated on a plain background",
+            "negative_prompt": "(worst_quality:2.0) low quality, blur ,deformed ugly, error, pixelated, bad face",
+            "BLIP_caption": "a woman in a dress and hat poses for a picture"
+        },
+        {
+            "name": "Minimalist",
+            "prompt": "Portrait of a beautiful woman wearing the Minimalist style, full body shot, isolated on a plain background",
+            "negative_prompt": "(worst_quality:2.0) low quality, blur ,deformed ugly, error, pixelated, bad face",
+            "BLIP_caption": "a woman in white pants and a white top stands in front of a gray background"
+        },
+        {
+            "name": "Business",
+            "prompt": "Portrait of a beautiful woman wearing the Business style, full body shot, isolated on a plain background",
+            "negative_prompt": "(worst_quality:2.0) low quality, blur ,deformed ugly, error, pixelated, bad face",
+            "BLIP_caption": "a woman in a blue blazer and tan pants posing for a picture"
+        },
+        {
+            "name": "Tomboy",
+            "prompt": "Portrait of a beautiful woman wearing the Tomboy style, full body shot, isolated on a plain background",
+            "negative_prompt": "(worst_quality:2.0) low quality, blur ,deformed ugly, error, pixelated, bad face",
+            "BLIP_caption": "a woman in a denim jacket and green pants posing for a picture"
+        },
+        {
+            "name": "Retro",
+            "prompt": "Portrait of a beautiful woman wearing the Retro style, full body shot, isolated on a plain background",
+            "negative_prompt": "(worst_quality:2.0) low quality, blur ,deformed ugly, error, pixelated, bad face",
+            "BLIP_caption": "a woman in a blue shirt and orange skirt posing for a picture"
+        },
+        {
+            "name": "Eclectic",
+            "prompt": "Portrait of a beautiful woman wearing the Eclectic style, full body shot, isolated on a plain background",
+            "negative_prompt": "(worst_quality:2.0) low quality, blur ,deformed ugly, error, pixelated, bad face",
+            "BLIP_caption": "a woman in a long skirt and denim jacket posing for a picture"
+        },
+        {
+            "name": "Casual",
+            "prompt": "Portrait of a beautiful woman wearing the Casual style, full body shot, isolated on a plain background",
+            "negative_prompt": "(worst_quality:2.0) low quality, blur ,deformed ugly, error, pixelated, bad face",
+            "BLIP_caption": "a woman in a white shirt and blue jeans poses for a picture"
+        },
+        {
+            "name": "Edgy",
+            "prompt": "Portrait of a beautiful woman wearing the Edgy style, full body shot, isolated on a plain background",
+            "negative_prompt": "(worst_quality:2.0) low quality, blur ,deformed ugly, error, pixelated, bad face",
+            "BLIP_caption": "a woman in black leather pants and a black jacket"
+        },
+        {
+            "name": "Chic",
+            "prompt": "Portrait of a beautiful woman wearing the Chic style, full body shot, isolated on a plain background",
+            "negative_prompt": "(worst_quality:2.0) low quality, blur ,deformed ugly, error, pixelated, bad face",
+            "BLIP_caption": "a woman in a blue blazer and beige pants poses for a picture"
+        },
+        {
+            "name": "Modest",
+            "prompt": "Portrait of a beautiful woman wearing the Modest style, full body shot, isolated on a plain background",
+            "negative_prompt": "(worst_quality:2.0) low quality, blur ,deformed ugly, error, pixelated, bad face",
+            "BLIP_caption": "a woman in a floral dress and jacket poses for a picture"
+        }
+    ]
+}

@@ -1,0 +1,100 @@
+{
+    "styles": [
+        {
+            "name": "Italy",
+            "prompt": "Pictures of Italy Landscapes, full color, 4K, 8K, detailed, high quality",
+            "negative_prompt": "(worst_quality:2.0) low quality, blur ,deformed ugly, error, pixelated, bad face, monochrome",
+            "BLIP_caption": "arafed canal with boats and buildings in a narrow city"
+        },
+        {
+            "name": "Netherlands",
+            "prompt": "Pictures of Netherlands Landscapes, full color, 4K, 8K, detailed, high quality",
+            "negative_prompt": "(worst_quality:2.0) low quality, blur ,deformed ugly, error, pixelated, bad face, monochrome",
+            "BLIP_caption": "a windmill in the distance with a path leading to it"
+        },
+        {
+            "name": "Japan",
+            "prompt": "Pictures of Japan Landscapes, full color, 4K, 8K, detailed, high quality",
+            "negative_prompt": "(worst_quality:2.0) low quality, blur ,deformed ugly, error, pixelated, bad face, monochrome",
+            "BLIP_caption": "a view of a pagoda in the middle of a lake with trees and rocks"
+        },
+        {
+            "name": "Greece",
+            "prompt": "Pictures of Greece Landscapes, full color, 4K, 8K, detailed, high quality",
+            "negative_prompt": "(worst_quality:2.0) low quality, blur ,deformed ugly, error, pixelated, bad face, monochrome",
+            "BLIP_caption": "a view of a beautiful sunset over a village with blue domes"
+        },
+        {
+            "name": "Morocco",
+            "prompt": "Pictures of Morocco Landscapes, full color, 4K, 8K, detailed, high quality",
+            "negative_prompt": "(worst_quality:2.0) low quality, blur ,deformed ugly, error, pixelated, bad face, monochrome",
+            "BLIP_caption": "a view of a desert with sand dunes and bushes at sunset"
+        },
+        {
+            "name": "India",
+            "prompt": "Pictures of India Landscapes, full color, 4K, 8K, detailed, high quality",
+            "negative_prompt": "(worst_quality:2.0) low quality, blur ,deformed ugly, error, pixelated, bad face, monochrome",
+            "BLIP_caption": "a close up of a building with a pond in front of it"
+        },
+        {
+            "name": "USA",
+            "prompt": "Pictures of USA Landscapes, full color, 4K, 8K, detailed, high quality",
+            "negative_prompt": "(worst_quality:2.0) low quality, blur ,deformed ugly, error, pixelated, bad face, monochrome",
+            "BLIP_caption": "mountains and trees are reflected in a lake at sunset"
+        },
+        {
+            "name": "Canada",
+            "prompt": "Pictures of Canada Landscapes, full color, 4K, 8K, detailed, high quality",
+            "negative_prompt": "(worst_quality:2.0) low quality, blur ,deformed ugly, error, pixelated, bad face, monochrome",
+            "BLIP_caption": "a close up of a river with rocks and trees in the background"
+        },
+        {
+            "name": "Australia",
+            "prompt": "Pictures of Australia Landscapes, full color, 4K, 8K, detailed, high quality",
+            "negative_prompt": "(worst_quality:2.0) low quality, blur ,deformed ugly, error, pixelated, bad face, monochrome",
+            "BLIP_caption": "trees are growing in the water near a river with rocks and grass"
+        },
+        {
+            "name": "China",
+            "prompt": "Pictures of China Landscapes, full color, 4K, 8K, detailed, high quality",
+            "negative_prompt": "(worst_quality:2.0) low quality, blur ,deformed ugly, error, pixelated, bad face, monochrome",
+            "BLIP_caption": "a beautiful mountain landscape with a river and trees in the foreground"
+        },
+        {
+            "name": "Turkey",
+            "prompt": "Pictures of Turkey Landscapes, full color, 4K, 8K, detailed, high quality",
+            "negative_prompt": "(worst_quality:2.0) low quality, blur ,deformed ugly, error, pixelated, bad face, monochrome",
+            "BLIP_caption": "arafed view of a beautiful valley with a bird flying over it"
+        },
+        {
+            "name": "Peru",
+            "prompt": "Pictures of Peru Landscapes, full color, 4K, 8K, detailed, high quality",
+            "negative_prompt": "(worst_quality:2.0) low quality, blur ,deformed ugly, error, pixelated, bad face, monochrome",
+            "BLIP_caption": "a view of the ruins of machu picchuchu and the lake below"
+        },
+        {
+            "name": "Egypt",
+            "prompt": "Pictures of Egypt Landscapes, full color, 4K, 8K, detailed, high quality",
+            "negative_prompt": "(worst_quality:2.0) low quality, blur ,deformed ugly, error, pixelated, bad face, monochrome",
+            "BLIP_caption": "a large group of statues in a desert area next to a pool"
+        },
+        {
+            "name": "Kenya",
+            "prompt": "Pictures of Kenya Landscapes, full color, 4K, 8K, detailed, high quality",
+            "negative_prompt": "(worst_quality:2.0) low quality, blur ,deformed ugly, error, pixelated, bad face, monochrome",
+            "BLIP_caption": "zebras grazing in the savannah at sunset with the sun setting"
+        },
+        {
+            "name": "Thailand",
+            "prompt": "Pictures of Thailand Landscapes, full color, 4K, 8K, detailed, high quality",
+            "negative_prompt": "(worst_quality:2.0) low quality, blur ,deformed ugly, error, pixelated, bad face, monochrome",
+            "BLIP_caption": "boats floating in the water near a rocky cliff formation"
+        },
+        {
+            "name": "New Zealand",
+            "prompt": "Pictures of New Zealand Landscapes, full color, 4K, 8K, detailed, high quality",
+            "negative_prompt": "(worst_quality:2.0) low quality, blur ,deformed ugly, error, pixelated, bad face, monochrome",
+            "BLIP_caption": "mountains reflected in a lake at sunset with a mountain range in the background"
+        }
+    ]
+}
