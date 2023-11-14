@@ -43,13 +43,15 @@ def load(optional=False):
         
     else:
         #Loading unclip_50.py pipeline
+        print('---- LOADING MODELS ----')
+
         pipe_unclip_50 = StableUnCLIPImg2ImgPipeline.from_pretrained(
             "stabilityai/stable-diffusion-2-1-unclip", torch_dtype=torch.float16
         )
         pipe_unclip_50 = pipe_unclip_50.to("cuda")
-        print("----LOADING COMPLETED----")
+        print("---- LOADING COMPLETED ----")
     
-        print("----GPU USED: {}----".format(torch.cuda.current_device()))
+        print("---- GPU IN-USE: {} ----".format(torch.cuda.current_device()))
 
         return pipe_unclip_50
 
@@ -58,14 +60,12 @@ def main():
     global EMBEDS_DIR
     global OUTPUT_DIR
     
-    print('##############LOADING MODELS##############')
-
     #model_clip_image_vector_30, processor_clip_image_vector_30, pipe_unclip_50 = load(optional=True)
     pipe_unclip_50 = load()
 
     
-    print("##############INITIALIZING PROCESS##############")
-    print("##############PRESS ESC TO END##############")
+    print("---- INITIALIZING PROCESS ----")
+    print("---- END - ESC  PAUSE - P   RESUME - R ----")
 
     paused = False 
 
@@ -77,21 +77,21 @@ def main():
 
             #press escape to end loop
             if keyboard.is_pressed('esc'):
-                print("##############ENDING PROCESS##############")
+                print("---- ENDING PROCESS ----")
                 sys.exit(0)
 
             if keyboard.is_pressed('p'):
                 keyboard.block_key(1)
-                print('##############PAUSED##############')
+                print('---- PAUSED ----')
                 paused = True
             
         if paused:
             if keyboard.is_pressed('r'):
                 keyboard.block_key(1)
-                print('##############RESUMED##############')
+                print('---- RESUMED ----')
                 paused = False
             if keyboard.is_pressed('esc'):
-                print("##############ENDING PROCESS##############")
+                print("---- ENDING PROCESS ----")
                 sys.exit(0)
 
 if __name__ == "__main__":
