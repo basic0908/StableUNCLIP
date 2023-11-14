@@ -3,17 +3,28 @@ import os, cv2, time, sys
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
+import pandas as pd
 
+EMBEDS_DIR = r"C:\Users\ibara\Downloads\StableUNCLIP\RSM_imagine_dataset_v5\beer\22_image_embeds\00.npy"
+EMBEDS_DIR2 = r"C:\Users\ibara\Downloads\StableUNCLIP\RSM_imagine_dataset_v5\beer\22_image_embeds\01.npy"
 
-first_dir = r"C:\Users\ibara\Downloads\StableUNCLIP\RSM_imagine_dataset_v5\00_beer_bottle\10_good_image\00.jpg"
 SECOND_DIR = r"C:\Users\ibara\Downloads\StableUNCLIP\RSM_imagine_dataset_v5\00_beer_bottle\10_good_image\01.jpg"
 THIRD_DIR = r"C:\Users\ibara\Downloads\StableUNCLIP\RSM_imagine_dataset_v5\00_beer_bottle\10_good_image\02.jpg"
+csv = r"C:\Users\ibara\OneDrive - 株式会社エヌ・ティ・ティ・データ経営研究所\008_NTT人情研\202310TASK\data\RealtimeGeneration\pred_emv_latest.csv"
+
+embeds1 = np.load(EMBEDS_DIR)
+embeds2 = np.load(EMBEDS_DIR2)
+
+print(type(embeds1))
+print(type(embeds2))
+
+print(embeds1.shape)
+print(embeds2.shape)
+
+print(embeds1[:20])
+print(embeds2[:20])
 
 
-    
-## datasets available: landscape, fashion, beer, interior
-print("This is the name of the program:", sys.argv[0])
-print("Dataset type", sys.argv[1])
 
 
 

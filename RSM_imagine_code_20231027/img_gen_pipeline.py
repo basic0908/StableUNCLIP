@@ -7,10 +7,12 @@ import matplotlib.image as mpimg
 
 EMBEDS_DIR = r"C:\Users\ibara\Downloads\StableUNCLIP\RSM_imagine_dataset_v5\beer\22_image_embeds\00.npy"
 OUTPUT_DIR = r"C:\Users\ibara\Downloads\StableUNCLIP\RSM_imagine_dataset_v5\beer\OUTPUT_DIR"
+PRED_EMV_LATEST = r"C:\Users\ibara\OneDrive - 株式会社エヌ・ティ・ティ・データ経営研究所\008_NTT人情研\202310TASK\data\RealtimeGeneration\pred_emv_latest.csv"
 
 
 def embeds_to_image(pipe, embeds):
     embeds = np.load(EMBEDS_DIR)
+    print(embeds)
     image = torch.tensor(embeds, dtype=torch.float16).to("cuda")
 
     image = pipe(image_embeds=image).images[0]
@@ -27,6 +29,13 @@ def showImage(path):
         plt.pause(0.1)
     else:
         print("PATH NOT FOUND : {}".format(path))
+
+def toEmbeds():
+    global EMBEDS_DIR, PRED_EMV_LATEST
+    arr = np.loadtxt(PRED_EMV_LATEST, delimiter=",")
+    reshaped_arr = arr[-1, :].reshape(1, -1)
+    
+    np.save(EMBEDS_DIR, reshaped_arr)
 
 def load(optional=False):
     # Loads all required models  
@@ -72,6 +81,8 @@ def main():
     while True:
    
         if not paused:
+            toEmbeds()
+
             embeds_to_image(pipe_unclip_50, EMBEDS_DIR)
             showImage(os.path.join(OUTPUT_DIR, 'output_image.jpg'))
 

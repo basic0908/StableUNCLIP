@@ -5,32 +5,40 @@ from unclip_text_variation_51 import *
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 import multiprocessing
-import random, time
+import random
 
-EMBEDS_DIR = r"C:\Users\ibara\Downloads\StableUNCLIP\RSM_imagine_dataset_v5\00_beer_bottle\22_image_embeds\00.npy"
-OUTPUT_DIR = r"C:\Users\ibara\Downloads\StableUNCLIP\RSM_imagine_dataset_v5\00_beer_bottle\OUTPUT_DIR"
-
-
-def embeds_to_image(pipe, embeds):
-    embeds = np.load(EMBEDS_DIR)
-    image = torch.tensor(embeds, dtype=torch.float16).to("cuda")
-
-    image = pipe(image_embeds=image).images[0]
-    output_path = os.path.join(OUTPUT_DIR, 'output_image.jpg')
-    image.save(output_path)
+EMBEDS_DIR = r"C:\Users\ibara\Downloads\StableUNCLIP\RSM_imagine_dataset_v5\beer\22_image_embeds\00.npy"
+OUTPUT_DIR = r"C:\Users\ibara\Downloads\StableUNCLIP\RSM_imagine_dataset_v5\beer\OUTPUT_DIR"
+PRED_EMV_LATEST = r"C:\Users\ibara\OneDrive - 株式会社エヌ・ティ・ティ・データ経営研究所\008_NTT人情研\202310TASK\data\RealtimeGeneration\pred_emv_latest.csv"
 
 
-def showImage(path):
-    if os.path.exists(path):
-        img = mpimg.imread(path)
+def embeds_to_image(pipe, embeds_dir, output_dir):
+    embeds = np.load(embeds_dir)
 
-        plt.axis('off')
-        plt.imshow(img)
-        plt.show(block=False)
-        plt.pause(0.1)
-        print(random.random())
+    if not np.isnan(embeds).any():
+        print(embeds)
+        image = torch.tensor(embeds, dtype=torch.float16).to("cuda")
+        image = pipe(image_embeds=image).images[0]
+
+        output_path = os.path.join(output_dir, 'output_image.jpg')
+        image.save(output_path)
     else:
-        print("PATH NOT FOUND : {}".format(path))
+        print('---- NOISE ABOVE THRESHOLD ----')
+
+
+def showImage(output_dir):
+    img = mpimg.imread(output_dir)
+    
+    plt.axis('off')
+    plt.imshow(img)
+    plt.show(block=False)
+    plt.pause(0.1)
+
+def toEmbeds(csv_file, embeds_dir):
+    arr = np.loadtxt(csv_file, delimiter=",")
+    reshaped_arr = arr[-1, :].reshape(1, -1)
+    
+    np.save(embeds_dir, reshaped_arr)
 
 
 def load(optional=False):
@@ -62,8 +70,7 @@ def load(optional=False):
 
 
 def main():
-    global EMBEDS_DIR
-    global OUTPUT_DIR
+    global EMBEDS_DIR, OUTPUT_DIR, PRED_EMV_LATEST
     
     #model_clip_image_vector_30, processor_clip_image_vector_30, pipe_unclip_50 = load(optional=True)
     pipe_unclip_50 = load()
@@ -78,16 +85,16 @@ def main():
     while True:
    
         if not paused:
+            toEmbeds(PRED_EMV_LATEST, EMBEDS_DIR)
 
-            process = multiprocessing.Process(target=embeds_to_image, args=(pipe_unclip_50, EMBEDS_DIR))
+            #embeds_to_image(pipe_unclip_50, EMBEDS_DIR)
+            #showImage(os.path.join(OUTPUT_DIR, 'output_image.jpg'))
+            process = multiprocessing.Process(target=embeds_to_image, args=(pipe_unclip_50, EMBEDS_DIR, OUTPUT_DIR))
 
             process.start()
             while process.is_alive():
-                time1 = time.now()
-                showImage(EMBEDS_DIR)
-            print('---- NEW IMAGE  ----')
+                showImage(os.path.join(OUTPUT_DIR, 'output_image.jpg'))
             process.join()
-            #showImage(os.path.join(OUTPUT_DIR, 'output_image.jpg'))
 
             #press escape to end loop
             if keyboard.is_pressed('esc'):
