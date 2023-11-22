@@ -10,14 +10,16 @@ EMBEDS_DIR = r"C:\Users\ibara\Downloads\StableUNCLIP\RSM_imagine_dataset_v5\beer
 OUTPUT_DIR = r"C:\Users\ibara\Downloads\StableUNCLIP\RSM_imagine_dataset_v5\beer\OUTPUT_DIR"
 PRED_EMV_LATEST = r"C:\Users\ibara\OneDrive - 株式会社エヌ・ティ・ティ・データ経営研究所\008_NTT人情研\202310TASK\data\RealtimeGeneration\pred_emv_latest.csv"
 
+def replaceImage(output_dir):
+    current_image = cv2.imread(os.path.join(output_dir, 'current_image.jpg'))
+    next_image = cv2.imread(os.path.join(output_dir, 'next_image.jpg'))
+    cv2.imwrite(os.path.join(output_dir, 'current_image.jpg'), next_image)
+    cv2.imwrite(os.path.join(output_dir, 'prev_image.jpg'), current_image)
+
 def embedsToImage(pipe, embeds_dir, output_dir):
     embeds = np.load(embeds_dir)
 
     if not np.isnan(embeds).any():
-        # replacing next image by current image
-        next_image = cv2.imread(os.path.join(OUTPUT_DIR, 'next_image.jpg'))
-        cv2.imwrite(os.path.join(OUTPUT_DIR, 'current_image.jpg'), next_image)
-
         # converting embeds to next image
         image = torch.tensor(embeds, dtype=torch.float16).to("cuda")
         image = pipe(image_embeds=image).images[0]
@@ -111,11 +113,11 @@ def main():
             if embedsToImageThread.is_alive():
                 # displaying gradual transition
                 for i in np.arange(0, 1.1, 0.1):
-                    showImage(os.path.join(OUTPUT_DIR, 'current_image.jpg'), os.path.join(OUTPUT_DIR, 'next_image.jpg'), i)
-                            
+                    showImage(os.path.join(OUTPUT_DIR, 'prev_image.jpg'), os.path.join(OUTPUT_DIR, 'current_image.jpg'), i)
             
             embedsToImageThread.join()
         
+            replaceImage(OUTPUT_DIR)
 
             #press escape to end loop
             if keyboard.is_pressed('esc'):
