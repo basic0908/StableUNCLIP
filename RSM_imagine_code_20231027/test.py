@@ -16,9 +16,24 @@ csv = r"C:\Users\ibara\OneDrive - 株式会社エヌ・ティ・ティ・デー�
 OUTPUT_DIR = r"C:\Users\ibara\Downloads\StableUNCLIP\RSM_imagine_dataset_v5\beer\OUTPUT_DIR"
 
 
-current = mpimg.imread(SECOND_DIR)
-next = mpimg.imread(THIRD_DIR)
+img1 = mpimg.imread(SECOND_DIR)
+img2 = mpimg.imread(THIRD_DIR)
 img3 = mpimg.imread(FOURTH_DIR)
+
+img = mpimg.imread(SECOND_DIR)
+print(type(img))
+
+
+def showImage(output_dir, next_dir, weight):
+    img = mpimg.imread(output_dir)
+    print(type(img))
+    next_img = mpimg.imread(next_dir)
+    
+    plt.axis('off')
+    plt.imshow(cv2.addWeighted(img, (1-weight), next_img, weight, 0))
+    plt.show(block=False)
+    plt.pause(0.1)
+
 
 
 
