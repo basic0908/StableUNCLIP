@@ -105,19 +105,22 @@ def main():
 
     # ----------- No Concurrency method
             # embedsToImage(pipe_unclip_50, EMBEDS_DIR, OUTPUT_DIR)
-            # showImage(os.path.join(OUTPUT_DIR, 'output_image.jpg'))
 
-    # ----------- MultiThreading method
+            # for i in np.arange(0, 1.1, 0.2):
+            #         showImage(os.path.join(OUTPUT_DIR, 'prev_image.jpg'), os.path.join(OUTPUT_DIR, 'current_image.jpg'), i)
+
+    # ----------- MultiThreading method 
             embedsToImageThread = threading.Thread(target=embedsToImage, args=(pipe_unclip_50, EMBEDS_DIR, OUTPUT_DIR))
             embedsToImageThread.start()
 
             if embedsToImageThread.is_alive():
                 # displaying gradual transition
-                for i in np.arange(0, 1.1, 0.1):
+                for i in np.arange(0, 1.1, 0.2):
                     showImage(os.path.join(OUTPUT_DIR, 'prev_image.jpg'), os.path.join(OUTPUT_DIR, 'current_image.jpg'), i)
             
             embedsToImageThread.join()
-        
+    # ------------
+
             replaceImage(OUTPUT_DIR)
 
             #press escape to end loop
