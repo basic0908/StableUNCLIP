@@ -43,10 +43,13 @@ def showImage(output_dir, next_dir, weight):
 
 
 def toEmbeds(csv_file, embeds_dir):
-    arr = np.loadtxt(csv_file, delimiter=",")
-    reshaped_arr = arr[-1, :].reshape(1, -1)
+    try:
+        arr = np.loadtxt(csv_file, delimiter=",")
+        reshaped_arr = arr[-1, :].reshape(1, -1)
     
-    np.save(embeds_dir, reshaped_arr)
+        np.save(embeds_dir, reshaped_arr)
+    except:
+        print('---- ERROR LOADING DATA ----')
 
 
 def load(optional=False):
