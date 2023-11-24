@@ -1,9 +1,14 @@
 # StableUNCLIP
 
-A pipeline that takes EEG, converts into image-embedding, then convert to image.
-It continuously displays images, utilized for neurofeedback training.
 
 change root path and type of dataset for own use.
 
-matlab code not included.
+A pipeline that decodes eeg into image embedding in real-time(RealTimeDecoding.m), then converted to image. 
+The program displays images in repetition, which is used for neurofeedback training. 
+It should show your imagined image in multiple cycles. 
+
+First train your decoding model.
+
+
+
 
