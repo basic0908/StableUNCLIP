@@ -7,9 +7,9 @@ import matplotlib.image as mpimg
 import multiprocessing, threading, cv2
 
 
-EMBEDS_DIR = r"C:\Users\ibara\Downloads\StableUNCLIP\RSM_imagine_dataset_v5\beer\22_image_embeds\00.npy"
-OUTPUT_DIR = r"C:\Users\ibara\Downloads\StableUNCLIP\RSM_imagine_dataset_v5\beer\OUTPUT_DIR"
-PRED_EMV_LATEST = r"C:\Users\ibara\Downloads\StableUNCLIP\data\RealtimeGeneration\pred_emv_latest.csv"
+EMBEDS_DIR = r"C:\Users\ibara\Downloads\UNCLIP\RSM_imagine_dataset_v5\beer\22_image_embeds\00.npy"
+OUTPUT_DIR = r"C:\Users\ibara\Downloads\UNCLIP\RSM_imagine_dataset_v5\beer\OUTPUT_DIR"
+PRED_EMV_LATEST = r"C:\Users\ibara\Downloads\UNCLIP\data\RealtimeGeneration\pred_emv_latest.csv"
 
 def replaceImage(output_dir):
     current_image = cv2.imread(os.path.join(output_dir, 'current_image.jpg'))
@@ -46,10 +46,11 @@ def toEmbeds(csv_file, embeds_dir):
     try:
         arr = np.loadtxt(csv_file, delimiter=",")
         reshaped_arr = arr[-1, :].reshape(1, -1)
-    
+
         np.save(embeds_dir, reshaped_arr)
-    except IndexError as e:
-        print(e)
+
+    except ValueError:
+        print("---- EEG DOES NOT MATCH WITH (1,1024) ----")
 
 
 def load(optional=False):
